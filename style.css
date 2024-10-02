@@ -1,0 +1,243 @@
+/* ESTILO GERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: hsl(0, 0%, 100%);
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+}
+
+.btn-contato button{
+    padding: 5px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #7bff00;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+h2.titulo{
+    color: blue;
+    font-size: 32px;
+    text-align: center;
+
+}
+
+/* ESTILO CABEÇALHO */
+header >.interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #646363;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: black;
+    transform: scale(1.2);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 80px;
+}
+
+
+
+/* ESTILO TOPO DO SITE*/
+section.topo-do-site {
+    padding: 20px 4%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 40px;  
+}
+
+.topo-do-site .txt-topo-site h1{
+    color: rgb(0, 68, 255);
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site p{
+    margin: 40px 0;
+}
+
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 3s ease-in-out infinite alternate;
+}
+
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/* ESTILO DAS ESPECIALIDADES*/
+section.especialidades{
+    padding: 20px 4%;
+    box-shadow: 0 0 40px 10px #7bff0060;
+}
+.especialidades .especialidades-box{
+    padding: 40px;
+}
+
+.especialidades .especialidades-box i{
+    font-size: 70px;
+    color: blue;
+}
+
+.especialidades .especialidades-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+/* ESTILO DO SOBRE MIM*/
+section.sobre{
+    padding: 20px 4%;
+    box-shadow: 0 0 40px 10px #7bff0034;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+
+.sobre .txt-sobre h2{
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 30px;
+    color: blue;
+    
+}
+.txt-sobre{
+    padding: 20px;
+}
+.txt-sobre h2{
+    color: blue;
+    padding: 20px;
+}
+
+.sobre .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+.sobre .txt-sobre .btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #7bff00;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+/* ESTILO PORTIFÓLIO*/
+section.portifolio{
+    padding: 20px 4%;
+    box-shadow: 0 0 40px 10px #7bff0034;
+}
+
+section.portifolio .flex{
+    justify-content: space-around;
+    margin-top: 45px;
+}
+
+.img-port{
+    width: 860px;
+    height: 460px;
+    background-size: cover;
+    background-position: 0% 100%;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+    
+}
+.img-port:hover{
+    background-position: 100% 100%;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #7bff0036;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+}
+/* ESTILO FORMULÁRIO DE CONTATO*/
+section.formulario{
+    padding: 20px 4%;
+}
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px; 
+}
+form input, form textarea{
+    width: 100%;
+    background-color: #7bff0060;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    font-size: 18px;
+}
+form textarea{
+    resize: none;
+    max-height: 200px;
+}
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+form .btn-enviar input{
+    width: 100px;
+    background-color: #7bff00;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+
+}
+
+
