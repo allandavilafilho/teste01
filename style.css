@@ -208,7 +208,7 @@ section.formulario{
     padding: 20px 4%;
 }
 form{
-    max-width: 500px;
+    max-width: 700px;
     margin: 0 auto;
     display:flex;
     justify-content: center;
@@ -240,6 +240,13 @@ form .btn-enviar input{
     font-weight: 700;
     cursor: pointer;
 
+}
+
+.mapa2{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
 }
 
 
